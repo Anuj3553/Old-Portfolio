@@ -199,6 +199,18 @@ footer {
   background-size: 10px 10px;
 }
 
+.footer-text{
+  width: 80px;
+  margin: 15px 60px;
+}
+
+.footer-img{
+  border-radius: 50%;
+}
+
+.footer-email{
+  width: max-content;
+}
 .footer {
   display: flex;
   padding: 23px 122px;
