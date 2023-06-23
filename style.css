@@ -39,6 +39,16 @@ nav ul li a:hover {
   color: blue;
 }
 
+nav img{
+  border-radius: 50%;
+  width: 60px; 
+  margin-right: 20px;
+}
+
+.nav-text{
+  color: blue;
+}
+
 main hr {
   border: 0;
   background: #000000;
