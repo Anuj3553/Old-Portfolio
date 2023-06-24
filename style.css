@@ -39,13 +39,13 @@ nav ul li a:hover {
   color: blue;
 }
 
-nav img{
+nav img {
   border-radius: 50%;
-  width: 60px; 
+  width: 60px;
   margin-right: 20px;
 }
 
-.nav-text{
+.nav-text {
   color: blue;
 }
 
@@ -77,8 +77,13 @@ main hr {
   align-items: center;
 }
 
-.firstSection > div {
+.firstSection>div {
   width: 36%;
+}
+
+.footer-hr1 hr {
+  rotate: 180deg;
+  margin: 27px -100px;
 }
 
 .leftSection {
@@ -199,18 +204,19 @@ footer {
   background-size: 10px 10px;
 }
 
-.footer-text{
+.footer-text {
   width: 80px;
   margin: 15px 60px;
 }
 
-.footer-img{
+.footer-img {
   border-radius: 50%;
 }
 
-.footer-email{
+.footer-email {
   width: max-content;
 }
+
 .footer {
   display: flex;
   padding: 23px 122px;
@@ -233,11 +239,11 @@ footer {
   list-style: none;
 }
 
-.footer > div {
+.footer>div {
   width: 200px;
 }
 
-footer > div hr {
+footer>div hr {
   border: 0;
   background: #ffffff;
   height: 1.2px;
@@ -259,9 +265,10 @@ footer .footer-rights {
 }
 
 @media screen and (max-width: 1400px) {
-  body{
+  body {
     min-width: fit-content;
   }
+
   nav {
     display: flex;
     justify-content: space-around;
@@ -283,16 +290,19 @@ footer .footer-rights {
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
   }
+
   .secondSection h1 {
     font-size: 2rem;
     width: max-content;
     font-weight: bolder;
   }
+
   .text-gray {
     color: gray;
     position: sticky;
     width: max-content;
   }
+
   .nameElement {
     width: max-content;
   }
@@ -301,7 +311,7 @@ footer .footer-rights {
     flex-direction: column;
   }
 
-  .leftSection{
+  .leftSection {
     width: 100% !important;
     display: flex;
     flex-direction: column;
@@ -309,13 +319,13 @@ footer .footer-rights {
     align-items: center;
   }
 
-  .rightSection{
+  .rightSection {
     width: 771px !important;
     display: flex;
     justify-content: center;
   }
 
-  .rightSection img{
+  .rightSection img {
     width: 45vw;
     margin-bottom: 73px;
   }
@@ -329,9 +339,20 @@ footer .footer-rights {
     align-items: center;
   }
 
+  footer>div>hr {
+    rotate: 0deg;
+    width: 17vw;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   .footer-main-head {
     font-size: 1rem;
-}
+  }
 
   .secondSection .box {
     max-width: 50vw;
@@ -354,6 +375,7 @@ footer .footer-rights {
     left: 42px;
     height: 68px;
   }
+
   .secondSection .vertical {
     height: 171px;
     width: 3px;
@@ -371,5 +393,5 @@ footer .footer-rights {
     width: 212px;
     font-size: 12px;
   }
-  
+
 }

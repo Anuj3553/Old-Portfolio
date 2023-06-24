@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="../Favicon/Profile.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="./Favicon/Profile.png" type="image/x-icon" />
   <title>Home | Anuj Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,22 +17,23 @@
     rel="stylesheet">
 
 </head>
+
 <body>
   <header>
     <nav>
-      <a href="../index.html">
+      <a href="./index.html">
         <div class="left">
-          <img src="../developer/profile_footer.jpg" alt="">
+          <img src="./developer/profile_footer.jpg" alt="">
           ANUJ&nbsp;<span class="nav-text">PORTFOLIO</span>
         </div>
       </a>
       <div class="right">
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../about/about.html">About</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about/about.html">About</a></li>
           <li><a href="https://github.com/Anuj3553?tab=repositories" target="_blank">Projects</a></li>
-          <li><a href="../Contact us/contact.html">Contact Us</a></li>
-          <li><a href="../Login Signup Page/login_page.html">Login &nbsp; &rarr;</a></li>
+          <li><a href="./Contact us/contact.html">Contact Us</a></li>
+          <li><a href="./Login Signup Page/login_page.html">Login &nbsp; &rarr;</a></li>
         </ul>
       </div>
     </nav>
@@ -42,11 +43,13 @@
     <section class="firstSection">
       <div class="leftSection">
         <div class="nameElement">
-          Hyy, my name is <span id="name"></span>
+          Hyy, my name is <span id="name">Anuj</span>
         </div>
         <div>and <span>I am a passionate</span>
         </div>
-        <span id="profession"></span>
+        <div>
+          <span id="profession"></span>
+        </div>
         <div class="buttons">
           <a href="/Resume/resume.pdf" target="_blank">
             <button class="btn1">VIEW Resume</button>
@@ -57,7 +60,7 @@
         </div>
       </div>
       <div class="rightSection">
-        <img src="../Bg/bg.png" alt="" />
+        <img src="./Bg/bg.png" alt="" />
       </div>
     </section>
     <!-- <hr /> -->
@@ -99,7 +102,7 @@
           </div>
         </div>
 
-        <img src="/Work Experience/netflix.png" class="image-top" />
+        <img src="./Work Experience/netflix.png" class="image-top" />
         <div class="vertical">
           <div class="vertical-title">HTML Developer (2010-2012)</div>
           <div class="vertical-desc">
@@ -137,22 +140,22 @@
   <footer>
     <div class="footer">
       <div class="footer-first">
-        <div class="footer-text"><img  class="footer-img" src="../developer/profile_footer.jpg"></div>
+        <div class="footer-text"><img class="footer-img" src="./developer/profile_footer.jpg"></div>
         <h3 class="footer-main-head">ANUJ PORTFOLIO</h3>
       </div>
       <div class="footer-second">
         <ul>
           <li class="footer-heading">MENU</li>
-          <a href="../about/about.html">
+          <a href="./about/about.html">
             <li>About us</li>
           </a>
           <a href="https://github.com/Anuj3553?tab=repositories">
             <li>Projects</li>
           </a>
-          <a href="../Contact us/contact.html">
+          <a href="./Contact us/contact.html">
             <li>Contact</li>
           </a>
-          <a href="../Contact us/Feedback.html">
+          <a href="./Contact us/Feedback.html">
             <li>Feedback</li>
           </a>
         </ul>
@@ -160,18 +163,18 @@
       <div class="footer-third">
         <ul>
           <li class="footer-heading">SERVICES</li>
-          <a href="../Services/privacy_policy.html">
+          <a href="./Services/privacy_policy.html">
             <li>Privacy Policy</li>
           </a>
-          <a href="../Services/terms_of_use.html">
+          <a href="./Services/terms_of_use.html">
             <li>Terms of use</li>
           </a>
-          <a href="../Services/refund_policy.html">
+          <a href="./Services/refund_policy.html">
             <li>Refund Policy</li>
           </a>
         </ul>
       </div>
-      <div>
+      <div class="footer-hr1">
         <hr>
       </div>
       <div class="footer-fourth">
@@ -186,6 +189,7 @@
       Copyright &#169; 2023 www.anujportfolio.com | All Rights Reserved.
     </div>
   </footer>
+
   <div
     class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
     <svg
@@ -203,16 +207,7 @@
     </svg>
   </div>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed("#name", {
-      strings: [
-        "Anuj",
-      ],
-      typeSpeed: 50,
-      loop: true
-    });
-  </script>
+
   <!-- Setup and start animation! -->
   <script>
     var typed = new Typed("#profession", {
