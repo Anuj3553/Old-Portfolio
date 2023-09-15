@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -37,7 +38,7 @@ nav ul li a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-weight: bolder;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 nav ul li a:hover {
@@ -46,7 +47,7 @@ nav ul li a:hover {
 
 nav img {
   border-radius: 50%;
-  width: 70px;
+  width: 60px;
   margin-right: 20px;
 }
 
@@ -72,7 +73,7 @@ nav img {
 
 .left {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: bolder;
   display: flex;
   align-items: center;
 }
@@ -85,9 +86,9 @@ nav img {
   padding: 50px 0;
 }
 
-.leftSection .btn1 {
+.btn1 {
   padding: 12px;
-  background: #4154cc;
+  background-color: #49499e;
   color: white;
   margin: 2px;
   border: 2px solid white;
@@ -95,9 +96,34 @@ nav img {
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
 }
 
-.leftSection .btn2 {
+.btn1::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: all 0.8s;
+}
+
+.btn1:hover::before {
+  width: 100%;
+}
+
+.btn1:hover {
+  border: 2px solid #4154cc;
+  color: black;
+}
+
+.btn2 {
   padding: 12px;
   background: #ffffff;
   color: #000000;
@@ -149,8 +175,66 @@ nav img {
 /* Bottom hr */
 main hr {
   background: #000000;
+  margin-bottom: 100px;
   height: 2px;
-  margin: 60px 100px;
+}
+
+/* Section Section */
+
+.secondSection {
+  display: flex;
+  flex-direction: column;
+  padding: 0 6rem;
+  position: relative;
+  bottom: 50px;
+}
+
+.mainHeading {
+  text-decoration: underline;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.workHeading {
+  margin: 4rem 0;
+  font-size: 2.5rem;
+  text-decoration: overline;
+  text-align: center;
+  color: #49499e;
+  font-weight: bolder;
+}
+
+.mainInternSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.internSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.internImg {
+  width: 10rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.descIntern {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.roleIntern {
+  font-size: 1.5rem;
 }
 
 /* Footer */
@@ -259,6 +343,10 @@ footer .footer-rights {
     height: 10rem;
   }
 
+  nav img {
+    width: 100px;
+  }
+
   .firstSection {
     flex-direction: column-reverse;
     text-align: center;
@@ -270,7 +358,7 @@ footer .footer-rights {
     margin: 35px 0;
   }
 
-  .leftSection{
+  .leftSection {
     width: 100% !important;
   }
 
@@ -278,61 +366,81 @@ footer .footer-rights {
     font-size: 4.5rem;
   }
 
+  .mainHeading {
+    text-align: center;
+  }
+
+  .mainInternSection {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   .footer {
     flex-direction: column;
   }
-
-  nav img {
-    width: 100px;
-  }  
 }
 
 @media screen and (max-width: 700px) {
-  nav{
+  .left {
+    font-size: 3.5rem;
+  }
+
+  nav {
     height: 8rem;
   }
 
-  nav ul li a{
+  nav ul li a {
     font-size: 1rem;
   }
 
-  .footer-rights{
+  .secondSection {
+    position: relative;
+    bottom: 50px;
+  }
+
+  .footer-rights {
     font-size: large;
-  }  
+  }
 
   .firstSection>div {
     width: 90%;
   }
 
-  
+  .descIntern {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .roleIntern {
+    font-size: 1rem;
+  }
+
   .footer-second,
   .footer-third,
   .footer-fourth {
     font-size: large;
   }
 
-  .footer-rights{
+  .footer-rights {
     font-size: small;
   }
 }
 
 @media screen and (max-width: 550px) {
-  
-  main hr{
-    display: none;
-  }
 
-  nav{
+  nav {
     height: 6rem;
   }
-  nav ul li a{
+
+  nav ul li a {
     font-size: 0.8rem;
   }
+
   nav img {
     width: 60px;
   }
 
-  .leftSection{
+  .leftSection {
     font-size: xx-large;
   }
 
@@ -342,29 +450,51 @@ footer .footer-rights {
 }
 
 @media screen and (max-width: 460px) {
-  nav{
+  nav {
     height: 5.5rem;
   }
 
   nav img {
     width: 60px;
   }
-  
-  nav ul li a{
+
+  nav ul li a {
     font-size: 0.48rem;
   }
 
   .left {
     font-size: 2rem;
-  }  
+  }
+
+  .mainHeading {
+    font-size: 2rem;
+  }
+
+  .workHeading {
+    margin: 3rem 0;
+    font-size: 1.5rem;
+  }
+
+  .internImg{
+    width: 8rem;
+  }
+
+  .descIntern {
+    font-size: 1rem;
+  }
+
+  .roleIntern {
+    font-size: 0.8rem;
+  }
+
 }
 
 @media screen and (max-width: 350px) {
-  nav{
+  nav {
     height: 5.5rem;
   }
-  
-  nav ul li a{
+
+  nav ul li a {
     font-size: 0.4rem;
   }
 
@@ -372,33 +502,46 @@ footer .footer-rights {
     font-size: 1.5rem;
   }
 
-  .buttons{
+  .buttons {
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
-  }  
+  }
 }
 
 @media screen and (max-width: 330px) {
-  nav ul li a{
+  nav ul li a {
     font-size: 0.27rem;
   }
 
-  .footer-email{
+  .footer-email {
     font-size: smaller;
-  } 
+  }
 }
 
 @media screen and (max-width: 300px) {
-  nav ul{
+  nav ul {
     flex-direction: column;
     text-align: center;
   }
 
-  nav ul li a{
+  nav img {
+    margin-right: 10px;
+  }
+
+  nav ul li a {
     font-size: 1rem;
   }
-  nav{
+
+  nav {
     height: 12rem;
+  }
+
+  .mainHeading {
+    font-size: 1.4rem;
+  }
+
+  .workHeading {
+    font-size: 1rem;
   }
 }
