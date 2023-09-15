@@ -335,6 +335,12 @@ footer .footer-rights {
   width: 100%;
 }
 
+.py-tb {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
 /* Responsiveness CSS */
 
 @media screen and (max-width: 1000px) {
