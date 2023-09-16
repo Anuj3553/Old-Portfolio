@@ -399,6 +399,21 @@ a {
   background-image: url(../image/Bak\ Bak.jpg);
 }
 
+#project-web-6 {
+  margin-left: 120px;
+  background-image: url(../image/Link\ Shortner.jpg);
+}
+
+#project-web-7 {
+  margin-left: 40px;
+  background-image: url(../image/Corona\ Virus\ Plotting\ Map.jpg);
+}
+
+#project-web-8 {
+  margin-left: 120px;
+  background-image: url(../image/Online\ Code\ Editor.jpg);
+}
+
 .icon-wrapper {
   display: flex;
   gap: 1rem;
@@ -476,7 +491,7 @@ a {
   }
 
   /* Web Developement Projects */
-  #project-web-1 {
+  #project-web-1{
     margin: auto;
   }
 
@@ -495,6 +510,19 @@ a {
   #project-web-5 {
     margin: auto;
   }
+
+  #project-web-6 {
+    margin: auto;
+  }
+
+  #project-web-7 {
+    margin: auto;
+  }
+
+  #project-web-8 {
+    margin: auto;
+  }
+
 }
 
 @media screen and (max-width: 360px) {
