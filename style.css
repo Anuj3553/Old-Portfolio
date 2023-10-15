@@ -22,6 +22,11 @@ nav {
   box-shadow: rgba(157, 157, 157, 0.2) 0px 4px 10px;
 }
 
+a,
+button {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -30,7 +35,6 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  margin: center;
   margin: 0 23px;
 }
 
@@ -50,7 +54,6 @@ nav img {
   width: 60px;
   margin-right: 20px;
 }
-
 
 .nav-text {
   color: blue;
@@ -124,10 +127,10 @@ nav img {
 }
 
 .btn2 {
-  padding: 12px;
+  padding: 12px 35px;
   background: #ffffff;
   color: #000000;
-  border: 2px solid #4154cc;
+  outline: 2px solid #4154cc;
   border-radius: 6px;
   font-size: 20px;
   font-weight: bold;
@@ -310,7 +313,6 @@ footer .footer-rights {
   text-align: center;
 }
 
-
 /* Bottom-hr */
 .bottom-hr {
   margin-top: 20px;
@@ -340,13 +342,16 @@ footer .footer-rights {
   padding-bottom: 2rem;
 }
 
-
 /* Responsiveness CSS */
 
 @media screen and (max-width: 1000px) {
   nav {
     flex-direction: column;
-    height: 10rem;
+    height: 12rem;
+  }
+
+  nav ul li a {
+    font-size: 1.95rem;
   }
 
   nav img {
@@ -383,6 +388,12 @@ footer .footer-rights {
 
   .footer {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav ul li a {
+    font-size: 1.8rem;
   }
 }
 
@@ -433,9 +444,8 @@ footer .footer-rights {
 }
 
 @media screen and (max-width: 550px) {
-
   nav {
-    height: 6rem;
+    height: 7rem;
   }
 
   nav ul li a {
@@ -455,17 +465,23 @@ footer .footer-rights {
   }
 }
 
-@media screen and (max-width: 460px) {
-  nav {
-    height: 5.5rem;
+@media screen and (max-width: 545px) {
+  nav ul li a {
+    font-size: 1rem;
   }
+}
 
+@media screen and (max-width: 460px) {
   nav img {
     width: 60px;
   }
 
+  nav ul li {
+    margin: 0 15px;
+  }
+
   nav ul li a {
-    font-size: 0.48rem;
+    font-size: 0.85rem;
   }
 
   .left {
@@ -481,7 +497,7 @@ footer .footer-rights {
     font-size: 1.5rem;
   }
 
-  .internImg{
+  .internImg {
     width: 8rem;
   }
 
@@ -492,7 +508,32 @@ footer .footer-rights {
   .roleIntern {
     font-size: 0.8rem;
   }
+}
 
+@media screen and (max-width: 410px) {
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  nav {
+    height: 5.5rem;
+  }
+
+  nav img {
+    width: 50px;
+  }
+
+  nav ul li a {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  nav ul li a {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -516,31 +557,30 @@ footer .footer-rights {
 }
 
 @media screen and (max-width: 330px) {
-  nav ul li a {
-    font-size: 0.27rem;
-  }
-
   .footer-email {
     font-size: smaller;
   }
 }
 
 @media screen and (max-width: 300px) {
-  nav ul {
-    flex-direction: column;
-    text-align: center;
+  nav {
+    height: 5rem;
+  }
+
+  nav ul li {
+    margin: 0 7px;
+  }
+
+  nav ul li a {
+    font-size: 0.7rem;
   }
 
   nav img {
     margin-right: 10px;
   }
 
-  nav ul li a {
-    font-size: 1rem;
-  }
-
-  nav {
-    height: 12rem;
+  .firstSection {
+    margin: 20px 0;
   }
 
   .mainHeading {
